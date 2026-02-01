@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المستشارين - مركز الإرشاد الأسري</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a4d6d;
+            --accent-color: #0081C9;
+            --success-color: #28a745;
+            --bg-color: #f4f7f6;
+        }
+
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: var(--bg-color); 
+            margin: 0; padding: 0; color: #333;
+        }
+
+        /* الهيدر مع خلفية مميزة */
+        .header { 
+            background-color: var(--primary-color); 
+            color: white; 
+            padding: 40px 15px; 
+            text-align: center; 
+            border-bottom: 6px solid var(--accent-color);
+        }
+
+        /* زر الموقع الرسمي - تصميم بارز */
+        .official-site-btn {
+            background: linear-gradient(135deg, #0081C9, #00bcd4);
+            color: white;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .official-site-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .official-site-btn i { margin-left: 12px; font-size: 1.4rem; }
+
+        .container { 
+            max-width: 850px; 
+            margin: 30px auto; 
+            padding: 0 15px; 
+        }
+
+        /* تصميم بطاقة المستشار */
+        .consultant-card {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-right: 10px solid var(--accent-color);
+            transition: 0.3s;
+        }
+
+        .consultant-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        /* تنسيق الصورة المستطيلة */
+        .profile-img {
+            width: 170px;
+            height: auto;
+            min-height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name { 
+            font-size: 1.4rem; 
+            font-weight: 700; 
+            color: var(--primary-color); 
+            margin: 0;
+        }
+
+        .specialty { 
+            color: var(--accent-color); 
+            font-weight: bold; 
+            font-size: 1rem;
+            margin: 8px 0;
+        }
+
+        .bio { 
+            font-size: 0.95rem; 
+            color: #666; 
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .call-btn {
+            background-color: var(--success-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            align-self: flex-start;
+            transition: 0.3s;
+        }
+
+        .call-btn:hover { background-color: #218838; }
+        .call-btn i { margin-left: 8px; }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 0.9rem;
+            background: #fff;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+        }
+
+        /* التوافق مع الجوال */
+        @media (max-width: 600px) {
+            .consultant-card { flex-direction: column; }
+            .profile-img { width: 100%; height: 250px; }
+            .call-btn { align-self: stretch; }
+            .official-site-btn { width: 90%; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 style="margin:0; font-size: 2rem;">دليل الكادر الاستشاري</h1>
+        <p style="opacity: 0.9; margin-top: 10px;">مركز الإرشاد الأسري - النجف الأشرف</p>
+        
+        <a href="https://nfcc.imamhussain.org/arabic" target="_blank" class="official-site-btn">
+            <i class="fas fa-external-link-alt"></i>
+            زيارة الموقع الرسمي للمركز
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="consultant-card">
+            <img src="images/saif.jpg" class="profile-img" alt="سيف الشمري">
+            <div class="info">
+                <h2 class="name">المستشار سيف الشمري</h2>
+                <span class="specialty">اختصاص: نفسية، إدمان</span>
+                <p class="bio"> تقديم الاستشارات النفسية المتخصصة وبرامج علاج الإدمان وإعادة التأهيل السلوكي.</p>
+                <a href="tel:07867913371" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/wafaa.jpg" class="profile-img" alt="وفاء كاظم">
+            <div class="info">
+                <h2 class="name">المستشارة وفاء كاظم</h2>
+                <span class="specialty">اختصاص: نفسية - تشخيصية</span>
+                <p class="bio">متخصصة في التشخيص النفسي الدقيق وتقديم الحلول الاستشارية للحالات النفسية المعقدة.</p>
+                <a href="tel:07726768725" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/dhafer.jpg" class="profile-img" alt="ظافر الموسوي">
+            <div class="info">
+                <h2 class="name">المستشار ظافر الموسوي</h2>
+                <span class="specialty">اختصاص: نفسية، إدمان</span>
+                <p class="bio">متخصص في الدعم النفسي وعلاج حالات الإدمان والاضطرابات السلوكية المرتبطة بها.</p>
+                <a href="tel:07815300059" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/zainab_y.jpg" class="profile-img" alt="زينب يحيى">
+            <div class="info">
+                <h2 class="name">المستشارة زينب يحيى</h2>
+                <span class="specialty">اختصاص: طفولة</span>
+                <p class="bio">  التعامل مع مشاكل الطفولة وتعديل السلوك وتنمية مهارات الطفل الاستيعابية.</p>
+                <a href="tel:07845401730" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/anfal.jpg" class="profile-img" alt="انفال سليم">
+            <div class="info">
+                <h2 class="name">المستشارة انفال سليم</h2>
+                <span class="specialty">اختصاص: طفولة، زوجية</span>
+                <p class="bio">متخصصة في حل النزاعات الزوجية وتقديم استشارات تربوية شاملة للأطفال.</p>
+                <a href="tel:07801193175" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/asmahan.jpg" class="profile-img" alt="اسمهان الربيعي">
+            <div class="info">
+                <h2 class="name">المستشارة اسمهان الربيعي</h2>
+                <span class="specialty">اختصاص: زوجية</span>
+                <p class="bio">تقديم استشارات متخصصة في العلاقات الأسرية وبناء التفاهم والانسجام بين الزوجين.</p>
+                <a href="tel:07732465732" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/rehab.jpg" class="profile-img" alt="رحاب مهدي">
+            <div class="info">
+                <h2 class="name">المستشارة رحاب مهدي</h2>
+                <span class="specialty">اختصاص: مراهقة</span>
+                <p class="bio">متخصصة في قضايا المراهقين وسبل احتوائهم وتوجيههم خلال هذه المرحلة العمرية الحرجة.</p>
+                <a href="tel:07815840060" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/moheeb.jpg" class="profile-img" alt="مهيب الأعرجي">
+            <div class="info">
+                <h2 class="name">المستشار مهيب الأعرجي</h2>
+                <span class="specialty">اختصاص: زوجية، نفسية</span>
+                <p class="bio">خبير في الاستشارات النفسية والزوجية لتعزيز الترابط الأسري والاستقرار النفسي المجتمعي.</p>
+                <a href="tel:07802739737" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/zainab_g.jpg" class="profile-img" alt="زينب جمال">
+            <div class="info">
+                <h2 class="name">المستشارة زينب جمال</h2>
+                <span class="specialty">اختصاص: طفولة، مراهقة</span>
+                <p class="bio">مواكبة لمراحل نمو الأبناء من الطفولة وحتى المراهقة ببرامج تربوية ونفسية حديثة.</p>
+                <a href="tel:07778518880" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/najat.jpg" class="profile-img" alt="نجاة محمد مطر">
+            <div class="info">
+                <h2 class="name">المستشارة نجاة محمد مطر</h2>
+                <span class="specialty">اختصاص: نفسية، زوجية</span>
+                <p class="bio">متخصصة في معالجة الاضطرابات النفسية وأثرها المباشر على جودة العلاقة الزوجية.</p>
+                <a href="tel:07880545471" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="images/yousra.jpg" class="profile-img" alt="يسرى المحنة">
+            <div class="info">
+                <h2 class="name">المستشارة يسرى المحنة</h2>
+                <span class="specialty">اختصاص: طفولة، مراهقة</span>
+                <p class="bio">توجيه تربوي ونفسي متخصص للأطفال والمراهقين لمواجهة التحديات السلوكية المعاصرة.</p>
+                <a href="tel:07801284055" class="call-btn"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+        <div class="consultant-card" style="border-right-color: #d9534f;">
+            <img src="images/nahda.jpg" class="profile-img" alt="نهضة الخفاجي">
+            <div class="info">
+                <h2 class="name">المستشارة نهضة الخفاجي</h2>
+                <span class="specialty">اختصاص: استشارات قانونية</span>
+                <p class="bio">تقديم المشورة القانونية الدقيقة فيما يخص القضايا الأسرية والشرعية والحقوق المدنية.</p>
+                <a href="tel:07801762030" class="call-btn" style="background-color: #28a745;"><i class="fas fa-gavel"></i> اتصال مباشر</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>📍 النجف الأشرف - شارع المدينة - سادس فرع من جهة اليمين (عمود 14)</p>
+        <p>© 2026 مركز الإرشاد الأسري - العتبة الحسينية المقدسة</p>
+    </div>
+
+</body>
+</html>
