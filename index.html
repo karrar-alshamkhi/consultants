@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المستشارين - مركز الإرشاد الأسري</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .consultants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .consultant-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .consultant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .consultant-name {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .consultant-specialty {
+            color: #666;
+            font-size: 1rem;
+            text-align: center;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .specialty-label {
+            font-weight: bold;
+            color: #764ba2;
+            margin-left: 5px;
+        }
+
+        .call-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .call-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .call-button:active {
+            transform: scale(0.98);
+        }
+
+        .call-icon {
+            font-size: 1.3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .consultants-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .consultant-card {
+                padding: 20px;
+            }
+
+            .consultant-name {
+                font-size: 1.3rem;
+            }
+
+            .call-button {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            header {
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .consultant-card {
+                padding: 15px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>دليل المستشارين</h1>
+            <p class="subtitle">مركز الإرشاد الأسري</p>
+        </header>
+
+        <div class="consultants-grid">
+            <!-- Consultant 1 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. أحمد محمد العلي</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>الإرشاد الزوجي والأسري</span>
+                </div>
+                <a href="tel:+9647801234567" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+
+            <!-- Consultant 2 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. سارة حسن الخالدي</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>الصحة النفسية للأطفال</span>
+                </div>
+                <a href="tel:+9647801234568" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+
+            <!-- Consultant 3 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. محمود خالد السامرائي</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>معالجة الإدمان والسلوك</span>
+                </div>
+                <a href="tel:+9647801234569" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+
+            <!-- Consultant 4 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. فاطمة علي النجار</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>التربية الوالدية الإيجابية</span>
+                </div>
+                <a href="tel:+9647801234570" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+
+            <!-- Consultant 5 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. عمر يوسف الجبوري</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>إرشاد المراهقين والشباب</span>
+                </div>
+                <a href="tel:+9647801234571" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+
+            <!-- Consultant 6 -->
+            <div class="consultant-card">
+                <div class="consultant-name">د. ليلى عبدالله الكريم</div>
+                <div class="consultant-specialty">
+                    <span class="specialty-label">التخصص:</span>
+                    <span>العلاج النفسي للكبار</span>
+                </div>
+                <a href="tel:+9647801234572" class="call-button">
+                    <span class="call-icon">📞</span>
+                    <span>اتصال مباشر</span>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 مركز الإرشاد الأسري - جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
+</body>
+</html>
